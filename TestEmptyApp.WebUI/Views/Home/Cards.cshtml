@@ -1,0 +1,41 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "Cards";
+    Layout = "~/Views/Shared/_CardLayout.cshtml";
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Card Number</th>
+            <th scope="col">Expire Date</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Any())
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row">@item.Id</th>
+                    <td>@item.CardNumber</td>
+                    <td>@item.ExpireDate</td>
+                    <td><i class="fa fas fa-pen"></i><a asp-action="Edit"  asp-controller="Home">Edit</a><a asp-action="Insert" asp-controller="Home">Insert</a><a class="del">Delete</a></td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="2">
+                    <div class="alert alert-warning">
+                        <p class="d-flex flex-column align-items-center">Kart tapilmadi
+                            <a asp-action="Insert"><b>Yenisini elave et</b></a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

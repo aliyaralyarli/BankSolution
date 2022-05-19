@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #1a213ddc;
+    padding: 2px 0px 2px 30px;
+    position: fixed;
+    z-index: 3;
+    width: 99.1%;
+}
+
+    header .left .lefts .box {
+        width: 8.5rem;
+    }
+
+        header .left .lefts .box img {
+            width: 100%;
+        }
+
+    header .left .mids {
+        margin-right: 5rem;
+    }
+
+        header .left .mids input {
+            background-color: #ffffff88;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 50px 10px 50px;
+            outline: none;
+            position: relative;
+        }
+
+            header .left .mids input::placeholder {
+                font-family: "Mulish", sans-serif;
+                color: #fff;
+            }
+
+        header .left .mids i {
+            position: absolute;
+            top: 1rem;
+            left: 2rem;
+            color: #fff;
+        }
+
+    header .left .rights {
+        margin-top: 20px;
+    }
+
+        header .left .rights ul {
+            display: flex;
+        }
+
+            header .left .rights ul .fa-angle-down {
+                margin-left: 10px;
+                font-size: 12px;
+            }
+
+            header .left .rights ul li {
+                margin-right: 15px;
+            }
+
+                header .left .rights ul li a {
+                    font-size: 16px;
+                    color: #fff;
+                    transition: 0.4s;
+                    font-weight: 400;
+                    font-family: "Work Sans", sans-serif;
+                }
+
+                    header .left .rights ul li a:hover {
+                        color: #4db7fe;
+                    }
+
+    header .right {
+        margin-top: 20px;
+    }
+
+        header .right ul {
+            text-align: center;
+            display: flex;
+        }
+
+            header .right ul li {
+                background-color: #4db7fe;
+                padding: 7px 26px;
+                border-radius: 20px;
+                position: relative;
+                z-index: 1;
+                transition: 0.4s;
+            }
+
+                header .right ul li:hover::before {
+                    width: 100%;
+                }
+
+                header .right ul li a {
+                    color: #fff;
+                }
+
+                header .right ul li::before {
+                    position: absolute;
+                    content: "";
+                    transition: 0.4s;
+                    background-color: #1a213dcc;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 0;
+                    border-radius: 20px;
+                    z-index: -1;
+                }
+
+#first {
+    background: linear-gradient(to right, #4db7fe 0%, #bda489 100%);
+    padding: 240px 0 160px;
+}
+
+    #first .box {
+        background-color: #8eb8d4;
+        position: relative;
+        border-radius: 20px;
+        transition: 0.4s;
+        box-shadow: 1px 2px 15px -1px #0000003d;
+        margin-bottom: 40px;
+    }
+
+        #first .box p {
+            position: absolute;
+            font-family: "Work Sans", sans-serif;
+            z-index: 1;
+            top: 70%;
+            font-size: 20px;
+            transition: 0.4s;
+            opacity: 0;
+            left: 10%;
+        }
+
+        #first .box:hover {
+            box-shadow: 1px 4px 15px -1px #000000;
+            transform: translateY(-5px);
+        }
+
+            #first .box:hover::before {
+                display: block;
+            }
+
+            #first .box:hover p {
+                top: 50%;
+                color: #fff;
+                left: 10%;
+                opacity: 1;
+            }
+
+            #first .box:hover img {
+                transform: scale(1.1);
+                filter: brightness(0.44);
+            }
+
+        #first .box img {
+            width: 100%;
+            transition: 0.4s;
+            height: 15rem;
+        }
+
+        #first .box::before {
+            position: absolute;
+            content: "";
+            background-color: #00000044;
+            border-radius: 20px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: none;
+            height: 100%;
+            transition: 0.4s;
+        }
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    footer p {
+        color: #fff;
+        margin: 0;
+    }
+
+        footer p a {
+            color: #fff;
+            transition: 0.4s;
+        }
+/*# sourceMappingURL=style.css.map */

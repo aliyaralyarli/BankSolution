@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Work+Sans:wght@600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="shortcut icon"
+          href="https://preview.colorlib.com/theme/gricklo/assets/img/icon/xfavicon.png.pagespeed.ic.T_b7aM30ll.webp"
+          type="image/x-icon">
+    <link rel="stylesheet" href="Assets/SCSS/bootstrap.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-9 left">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 lefts">
+                        <div class="box">
+                            <img src="data:image/webp;base64,UklGRjIDAABXRUJQVlA4TCUDAAAvjUALEPdgpm0b9yt/OsM2lYaBtG2yXd796xmBpI3r3/lX1EiScqvgskpWwvn3wcz0ugDb/vFw8XBwcbBxsDAx0FAQIO+5D1LABGBTIwKOLxooA4L3QsiSbbepLMlgsrFpbg7Mf5zNkWQ6+IWviP5DcMA2bkORvdtRtkMbewL989VWGN1PZdH7fSqLgOUQsCQClkIl4Rm+e3vBL60FuLnt2pad52/znrK89M2s25ib7ut424iW12HF3vvaN0O0DU3MNWWZqXQfNfP4VTzDDrBcDj5qWdZgjz4zEx02w8w9/ZyaHGuVM/zul2GC7n3fdzWzz5ivQD8A22nLNbRm/NG4P/ZRtJxUQ2G2HM4hzF+AEELKybe75Hp9Pq8f0kRO3nlmbi0rI9dp3v10lLy4MFIP68i1ScVcuyCgL/wmZIQtcrti5l43IZuRc65Wx9xCzx6WD/Rbsahaw+yYvYpRWfhdRvJDljzkFnDdDb0ydgPoaDIBjVTe8SAbThVaYWaOYEaIRwW48J2Hj/ambpuchLeyBSyC5nPKgLJoRMPdPu8RfCg3igSSY3bD/pndUMgRPTQ8yKQCLxYk1IRdVaQjsXKVK2YUSQyyd7DU5IheGp4ERBNaCCtpIpM3QledDpj72cLeqQukwjM3hltth34uNl5g5IQeFqUjL8e/EQgiKfR+IEosODkwAobbAKZsmk8yJKYi4pbrfXUE3gJUayOoCGTT+EimaNJjrj8ClwXuTQzGjcGLcfeAg02GiCr4qQwcf7ke2fxInfGyyjM42AQfGwEzBB26MQPHv5ZIofAJppVNriGdZ2lhfbxeDzhvAk3JP+mnSPPks0GtzLnJN4oZ4GTl3Li/hsterfzj7mYL/qBecx4SBHvtIU/lAgC6qPgccQ+oxJb0fdUrj3BQnXYdKPujU5wlGsTFJIJW+BTkY9q+5n8AsavAfN0neXYQjpIXA5JaB4+6T0eplifejlvhUz87+JDd34p5d7pvdLQiHIgO1qezSMfrmP11zzvIN+BvrxXjF8K2BDwrWwDkWwmoqgR11lSGOkuVos6octS5LCK6LPRftYgAAA=="
+                                alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mids">
+                        <input type="text" placeholder="Search">
+                        <i id="icon" class="fas fa-search"></i>
+                    </div>
+                    <div class="col-lg-5 rights">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li class="angledown"><a href="#">Listing<i id="arrowdown"
+                                        class="fas fas fa-angle-down"></i></a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 right">
+                <ul>
+                    <li><a asp-action="Register" asp-controller="Home">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    @RenderBody()
+    <footer>
+        <p>Copyright ©2022 All rights reserved | This template is made with by <a href="https://colorlib.com/wp/html5-and-css3-login-forms/">Colorlib</a></p>
+    </footer>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="~/assets/img/employee-details.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="~/assets/SCSS/bootstrap.css">
+    <style>
+        a{
+            text-decoration:none !important;
+        }
+        i{
+            margin-right: 12px;
+        }
+        a{
+          margin-right: 20px;
+          padding: 10px 15px;
+          background-color: rgb(243, 240, 240);
+          border-radius: 5px;
+          transition: .5s;
+          color:#000;
+        }
+        .del:hover{
+            background-color:red;
+        }
+        a:hover{
+            background-color: #544;
+            color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

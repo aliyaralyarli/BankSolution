@@ -1,0 +1,52 @@
+﻿@model Contact
+@{
+    ViewData["Title"] = "Contact";
+    Layout = "~/Views/Shared/_CardLayout.cshtml";
+}
+<section class="contact-section">
+    <div class="container">
+        <div class="page-header" style="background-image: url(/assets/images/page-header/contact-us.jpg)">
+            <h1 style="text-align:center;" class="page-title font-weight-bold text-capitalize ls-l">Contact Us</h1>
+            <div class="col-lg-9 col-md-8 col-sm-6 d-flex align-items-center mb-4">
+                <div class="w-100">
+                    <form id="contactPost" class="pl-lg-2" method="post">
+                        <h4 class="ls-m font-weight-bold">Let’s Connect</h4>
+                        @if (!string.IsNullOrWhiteSpace(ViewBag.Message))
+                        {
+                            <p class="alert alert-info">
+                                @ViewBag.Message
+                            </p>
+                        }
+
+                        <div class="row mb-2">
+                            <div class="col-md-6 mb-4">
+                                <input class="form-control"
+                                       type="text"
+                                       placeholder="Adınız *"
+                                       asp-for="Name">
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <input class="form-control"
+                                       type="email"
+                                       placeholder="E-poçtunuz *"
+                                       asp-for="Email">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-12 mb-4">
+                                <textarea class="form-control"
+                                          placeholder="Şərhiniz *"
+                                          asp-for="Comment"></textarea>
+                                <span asp-validation-for="Comment" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <button class="btn btn-dark btn-rounded">
+                            Post Comment<i class="d-icon-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
