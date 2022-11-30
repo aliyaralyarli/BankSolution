@@ -28,8 +28,6 @@ namespace TestEmptyApp.WebUI
             {
                 cfg.UseSqlServer(configuration.GetConnectionString("cString"));
             });
-            //services.AddIdentity<BankUser,BankRole>().AddEntityFrameworkStores<DbContext>();
-            //services.AddScoped<SignInManager<BankUser>>();
             services.AddAuthentication();
             services.AddAuthorization();
             services.ConfigureApplicationCookie(cfg =>
@@ -38,12 +36,10 @@ namespace TestEmptyApp.WebUI
                 cfg.Cookie.HttpOnly = true;
                 cfg.ExpireTimeSpan = new TimeSpan(0, 5, 0);
                 cfg.LoginPath = "signin.html";
-                //cfg.AccessDeniedPath = "access";
 
             });
             services.Configure<IdentityOptions>(cfg =>
             {
-                //cfg.User.AllowedUserNameCharacters = "abcde";
                 cfg.User.RequireUniqueEmail = true;
                 cfg.Password.RequireDigit = false;
                 cfg.Password.RequiredUniqueChars = 1;
